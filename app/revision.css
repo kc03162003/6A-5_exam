@@ -71,8 +71,8 @@
 @media(max-width:700px){.mFeedback{flex-direction:column;gap:5px}.mFeedback img{width:190px;height:230px}.mFeedback>div{padding:15px}.mFeedback b{font-size:20px}.repairChoices button{min-width:100px;padding:12px}}
 
 /* Approved golden lock for unopened stages */
-.stageLock{width:198px;height:198px;font-size:0!important;background:url('/game-assets/generated-v2/stage-lock-gold.png') center/contain no-repeat;filter:drop-shadow(0 7px 7px #6d4c1c88)!important;z-index:8!important;top:72%!important}.mapSpot:disabled{filter:none!important;opacity:1!important}.mapSpot:disabled .stageLock{opacity:1}.mapSpot:disabled>img{opacity:0!important;filter:none!important}.mapSpot:disabled>span{visibility:hidden}
-.mapSpot.final:disabled:after{content:'';position:absolute;z-index:8;left:50%;top:70%;transform:translate(-50%,-50%);width:198px;height:198px;background:url('/game-assets/generated-v2/stage-lock-gold.png') center/contain no-repeat;filter:drop-shadow(0 7px 7px #6d4c1c88)}
+.stageLock{width:198px;height:198px;font-size:0!important;background:url('game-assets/generated-v2/stage-lock-gold.png') center/contain no-repeat;filter:drop-shadow(0 7px 7px #6d4c1c88)!important;z-index:8!important;top:72%!important}.mapSpot:disabled{filter:none!important;opacity:1!important}.mapSpot:disabled .stageLock{opacity:1}.mapSpot:disabled>img{opacity:0!important;filter:none!important}.mapSpot:disabled>span{visibility:hidden}
+.mapSpot.final:disabled:after{content:'';position:absolute;z-index:8;left:50%;top:70%;transform:translate(-50%,-50%);width:198px;height:198px;background:url('game-assets/generated-v2/stage-lock-gold.png') center/contain no-repeat;filter:drop-shadow(0 7px 7px #6d4c1c88)}
 @media(max-width:700px){.stageLock{width:138px;height:138px}.mapSpot.final:disabled:after{width:138px;height:138px}}
 
 /* Approved gacha, dome growth and persistent city collection */
@@ -89,9 +89,9 @@
 
 /* Final approved visual integration */
 .seedGrowth{left:51.2%!important;top:31.2%!important;width:78px!important;height:82px!important;overflow:hidden!important;background:none!important}
-.seedGrowth i{display:block!important;width:100%!important;height:100%!important;background-image:url('/game-assets/plant-growth-five-stages.png')!important;background-repeat:no-repeat!important;background-size:500% 100%!important;filter:drop-shadow(0 2px 2px #6b753355);transform-origin:50% 88%}
+.seedGrowth i{display:block!important;width:100%!important;height:100%!important;background-image:url('game-assets/plant-growth-five-stages.png')!important;background-repeat:no-repeat!important;background-size:500% 100%!important;filter:drop-shadow(0 2px 2px #6b753355);transform-origin:50% 88%}
 .seedGrowth i:before,.seedGrowth i:after{content:none!important}.growth-1 i{background-position:0 0!important}.growth-2 i{background-position:25% 0!important}.growth-3 i{background-position:50% 0!important}.growth-4 i{background-position:75% 0!important}.growth-5 i{background-position:100% 0!important}
-.crystal i,.crystalShelf i,.crystalIcon{background-image:url('/game-assets/rainbow-crystals-v2.png')!important;background-size:400% 300%!important;background-repeat:no-repeat!important;background-color:transparent!important;clip-path:none!important;mix-blend-mode:normal!important;filter:drop-shadow(0 3px 3px #314b6366)!important}
+.crystal i,.crystalShelf i,.crystalIcon{background-image:url('game-assets/rainbow-crystals-v2.png')!important;background-size:400% 300%!important;background-repeat:no-repeat!important;background-color:transparent!important;clip-path:none!important;mix-blend-mode:normal!important;filter:drop-shadow(0 3px 3px #314b6366)!important}
 .crystalIcon{display:inline-block;width:48px!important;height:44px!important;margin-left:10px;vertical-align:middle}
 .gem0 i,.crystalIcon.gem0{background-position:0 0!important}.gem1 i,.crystalIcon.gem1{background-position:33.333% 0!important}.gem2 i,.crystalIcon.gem2{background-position:66.667% 0!important}.gem3 i,.crystalIcon.gem3{background-position:100% 0!important}
 .gem4 i,.crystalIcon.gem4{background-position:0 50%!important}.gem5 i,.crystalIcon.gem5{background-position:33.333% 50%!important}.gem6 i,.crystalIcon.gem6{background-position:66.667% 50%!important}.gem7 i,.crystalIcon.gem7{background-position:100% 50%!important}
@@ -107,7 +107,7 @@
 
 /* Replace the complete central landmark at each cleared stage. */
 .map .seedGrowth{left:51%!important;top:42.5%!important;width:25.5%!important;height:46%!important;transform:translate(-50%,-50%)!important;overflow:visible!important;z-index:11!important;filter:none!important}
-.map .seedGrowth i{width:100%!important;height:100%!important;background-image:url('/game-assets/central-building-growth-five-stages.png')!important;background-size:500% 100%!important;background-repeat:no-repeat!important;filter:drop-shadow(0 5px 4px #6d713c38)!important;animation:landmarkUpgrade .65s ease-out both!important}
+.map .seedGrowth i{width:100%!important;height:100%!important;background-image:url('game-assets/central-building-growth-five-stages.png')!important;background-size:500% 100%!important;background-repeat:no-repeat!important;filter:drop-shadow(0 5px 4px #6d713c38)!important;animation:landmarkUpgrade .65s ease-out both!important}
 .map .seedGrowth.growth-1 i{background-position:0 0!important}.map .seedGrowth.growth-2 i{background-position:25% 0!important}.map .seedGrowth.growth-3 i{background-position:50% 0!important}.map .seedGrowth.growth-4 i{background-position:75% 0!important}.map .seedGrowth.growth-5 i{background-position:100% 0!important}
 @keyframes landmarkUpgrade{from{opacity:.15;transform:scale(.82)}60%{filter:drop-shadow(0 0 20px #fff37e)}to{opacity:1;transform:scale(1)}}
 @media(max-width:700px){.map .seedGrowth{width:31%!important;height:39%!important;top:43%!important;transform:translate(-50%,-50%)!important}}
