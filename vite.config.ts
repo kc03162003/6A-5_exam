@@ -35,6 +35,18 @@ const localBindingConfig = {
 };
 
 export default defineConfig(async () => {
+  // A lightweight local-play mode avoids starting Cloudflare emulation when
+  // teachers only need to preview the self-contained classroom game.
+  if (process.env.LOCAL_PLAY === '1') {
+    return {
+      css: { postcss: { plugins: [tailwindcss()] } },
+      // Keep classroom previews instant and independent of Vite's dependency
+      // optimizer, which can stall on managed Windows school computers.
+      optimizeDeps: { noDiscovery: true },
+      plugins: [vinext()],
+    };
+  }
+
   // Keep Wrangler and Miniflare state project-local. These are non-secret tool
   // settings; application environment belongs in ignored `.env*` files.
   process.env.WRANGLER_WRITE_LOGS ??= 'false';
